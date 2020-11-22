@@ -47,3 +47,44 @@ print(str*2)
 print(str+str)
 print('hello\nrunoob')
 print(r'hello\nrunoob')
+
+#input('\n\n按下enter键后退出.')
+
+import sys; y = 'runoob'; sys.stdout.write(y + '\n')
+
+
+
+expression=2
+
+if expression==1:
+    print('expression=1')
+elif expression==2:
+    print('expression=2')
+else :
+    print('expression', expression)
+
+
+x='a'
+y='b'
+#换行输出
+print(x)
+print(y)
+
+print('-----------')
+#不换行输出
+print(x,end="")
+print(y,end="")
+print()
+
+import sys
+print('==============Python import mode===============')
+print('命令行参数为:')
+for i in sys.argv:
+    print(i)
+print('\n python 路径为',sys.path)
+
+from sys import argv,path #导入特定的成员
+
+print('==============Python import mode===============')
+print('path:',path)
+
