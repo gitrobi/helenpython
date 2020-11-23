@@ -88,3 +88,22 @@ from sys import argv,path #导入特定的成员
 print('==============Python import mode===============')
 print('path:',path)
 
+counter=100
+miles=1000.0
+name='runoob'
+print("\n")
+print(counter)
+print(miles)
+print(name)
+
+print()
+"""
+
+Number（数字）
+String（字符串）
+List（列表）
+Tuple（元组）
+Set（集合）
+Dictionary（字典
+
+"""
