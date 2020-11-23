@@ -40,7 +40,7 @@ total=a+b+c
 print("total=",total)
 
 str='Runabc'
-print(str[0:-1])
+print(str[1:-2])
 print(str[2:])
 print(str[1:5:2])
 print(str*2)
@@ -118,3 +118,23 @@ True
 
 含义是什么?isinstance的意思是“判断类型”
 """
+var1=1
+var2=10
+#del var1
+print('var1+var2=',var1+var2)
+
+print()
+
+"""
+5+4
+4.3-2
+3*7
+2/4   #除法,得到一个浮点数
+2//4  #得到一个整数
+17%3  #取余
+2**5  #取幂
+"""
+
+word='Python'
+print(word[0],word[5])
+print(word[-1],word[-6])
