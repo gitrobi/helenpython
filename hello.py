@@ -138,3 +138,57 @@ print()
 word='Python'
 print(word[0],word[5])
 print(word[-1],word[-6])
+
+print()
+
+list=['abcd',786,2.23,'runoob',70.2]
+tinylist=[123,'runoob']
+print(list)
+print(list[0])
+print(list[1:3])
+print(list[2:])
+print(tinylist*2)
+print(list+tinylist)
+
+a=[1,2,3,4,5,6]
+a[0]=9
+a[2:5]=[13,14,15]
+print(a)
+print()
+
+letters=['r','u','n','o','c','b']
+print(letters[1:5:3])
+print()
+
+sites = {'Google', 'Taobao', 'Runoob', 'Facebook', 'Zhihu', 'Baidu'}
+print(sites)
+if 'Runoob' in sites:
+    print('Runoob在集合中')
+else:
+    print('Runoob不再集合中')
+print( )
+
+a=set('abracadabra')
+b=set('alacazam')
+print(a)
+print(b)
+print(a-b)
+print(a|b)
+print(a&b)
+print(a^b)
+
+print()
+
+dict={}
+dict["one"]="1-菜鸟教程"
+dict[2]="2-菜鸟工具"
+
+tinydict={'name': 'runoob','code':1, 'site': 'www.runoob.com'}
+print(dict["one"])
+print(dict[2])
+print(tinydict)
+print(tinydict.keys())
+print(tinydict.values())
+
+Abc= {x: x**2 for x in (2, 4, 6)}
+print(Abc)
