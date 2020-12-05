@@ -307,3 +307,53 @@ if (a in list):
     print("3 - 变量 a 在给定的列表中 list 中")
 else:
     print("3 - 变量 a 不在给定的列表中 list 中")
+
+print()
+
+a,b=0,1  #斐波纳契数列
+while b<10:
+    print(b)
+    a,b=b,a+b #先计算右边,同时赋值给左边
+
+print()
+a,b,n,m=0,1,0,0
+while b<10:
+    print(b)
+    n=b
+    m=a+b
+    a=n
+    b=m
+
+
+print()
+
+a, b = 0, 1
+while b < 1000:
+    print(b, end=',')
+    a, b = b, a+b
+
+print("\n")
+
+a=1
+while a<7:
+    if(a%2==0):
+        print(a,"is even")
+    else:
+        print(a,"is odd")
+    a +=1
+
+
+age = int(input("请输入你家狗狗的年龄: "))
+print("")
+if age<=0:
+    print("你在逗我吧!")
+elif age==1:
+    print("相当于 14 岁的人。")
+elif age==2:
+    print("相当于 22 岁的人。")
+elif age>2:
+    human = 22 + (age -2)*5
+    print("对应人类年龄: ", human)
+
+### 退出提示
+input("点击 enter 键退出")
