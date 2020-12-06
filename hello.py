@@ -335,6 +335,8 @@ while b < 1000:
 print("\n")
 
 a=1
+
+"""
 while a<7:
     if(a%2==0):
         print(a,"is even")
@@ -342,8 +344,8 @@ while a<7:
         print(a,"is odd")
     a +=1
 
-
-age = int(input("请输入你家狗狗的年龄: "))
+age = input("请输入你家狗狗的年龄: ")
+age = int(age)
 print("")
 if age<=0:
     print("你在逗我吧!")
@@ -357,3 +359,78 @@ elif age>2:
 
 ### 退出提示
 input("点击 enter 键退出")
+
+"""
+"""
+number=7
+guess = -1
+print("数字猜谜游戏!")
+while guess != number:
+    guess = int(input("请输入你猜的数字："))
+
+    if guess == number:
+        print("恭喜，你猜对了！")
+    elif guess < number:
+        print("猜的数字小了...")
+    elif guess > number:
+        print("猜的数字大了...")
+
+"""
+"""
+num=int(input("请输入一个数字:"))
+if num%2==0:
+    if num%3==0:
+        print("你输入的数字可以整除2和3")
+    else:
+        print("你输入的数字可以整除2,但不能整除3")
+else:
+    if num%3==0:
+        print("你输入的数字可以整除3,但不能整除2")
+    else:
+        print("你输入的数字不能整除2和3")
+"""
+a=1
+while a<20:
+    print(a,end=',')
+    a+=3
+
+n = 100
+
+print("\n")
+
+sum = 0
+counter = 1
+while counter <= n:
+    sum = sum + counter
+    counter += 1
+
+print("1 到 %d 之和为: %d" % (n, sum)) #%d表明打印整数
+
+print(" ")
+
+count = 0
+while count < 10:
+   print (count, " 小于 10")
+   count = count + 1
+else:
+   print (count, " 大于或等于 10")
+
+print(" ")
+
+languages = ["C", "C++", "Perl", "Python"]
+for x in languages:
+    print(x,end=',')
+
+print("\n ")
+
+sites = ["Baidu", "Google","Runoob","Taobao"]
+for site in sites:
+    if site == "Runoob":
+        print("菜鸟教程!")
+        break
+    print("循环数据 " + site)
+else:
+    print("没有循环数据!")
+print("完成循环!")
+
+print(" ")
