@@ -434,3 +434,56 @@ else:
 print("完成循环!")
 
 print(" ")
+
+for i in range(-5,5,2):
+    print(i,end=',')
+
+print("\n")
+
+a = ['Google', 'Baidu', 'Runoob', 'Taobao', 'QQ']
+for i in range(len(a)):
+    print(i, a[i],end=',')
+print("\n")
+
+sites=['Google','Wiki','Weibo','Runoob','Baidu']
+for site in sites:
+    if len(site)!=4:
+        continue  #跳过循环块中的剩余语句,继续下一轮循环.
+    print(f"Hello,{site}")  #特别注意列表元素的打印方法.
+    if site=="Runoob":
+        break  #跳出for和While的循环体.
+print("Done!")
+
+n=5
+while n>0:
+    n-=1
+    if n==2:
+        continue
+    print(n,end=',')
+print("循环结束.")
+
+for letter in 'Runoob':
+    if letter=='b':
+        break
+    print('当前字母为:',letter, end=',')
+
+print("\n")
+
+var=10
+while var>0:
+    var=var-1
+    if var>5:
+        continue #跳过下面的打印循环体
+    print("当前变量值:",var,end=',')
+print("Good bye!")
+
+print("\n")
+
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, '等于', x, '*', n//x)
+            break
+    else:
+        # 循环中没有找到元素
+        print(n, ' 是质数')
