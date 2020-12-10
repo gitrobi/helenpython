@@ -487,3 +487,56 @@ for n in range(2, 10):
     else:
         # 循环中没有找到元素
         print(n, ' 是质数')
+
+list=[1,2,3,4]     #迭代器有两个基本方法 inter和next, 可以记住遍历的位置的对象.
+it=iter(list)
+#print(next(it))
+#print(next(it))
+for x in it:
+    print(x,end=" ")
+
+print("\n")
+
+"""
+import sys
+list=[1,2,3,4]
+it= iter(list)
+while True:
+    try:
+        print(next(it),end=" ")
+    except StopIteration: #异常用于标识迭代的完成.
+        sys.exit()
+"""
+
+
+def max(a,b):
+    if a>b:
+        return a
+    else:
+        return b
+
+a=3
+b=2
+print(max(a,b))
+
+print("\n")
+
+
+def area(width, height):
+    return width * height
+
+
+def print_welcome(name):
+    print("Welcome", name)
+
+
+print_welcome("Runoob")
+w = 4
+h = 5
+print("width =", w, " height =", h, " area =", area(w, h))
+
+def printme(str):
+    print(str)
+    return
+
+printme("我是中国人!")
