@@ -540,3 +540,27 @@ def printme(str):
     return
 
 printme("我是中国人!")
+
+#在python中, strings,tuples和numbers都是不可更改的对象,而list 和dict则是可以修改的对象.
+
+def change(a):   #通过id函数来查看内存地址变化:
+    print(id(a)) #指向的是同一个对象
+    a=10
+    print(id(a)) #一个新对象
+a=1
+print(id(a))
+change(a)
+
+print("\n")
+
+
+def changeme(mylist):
+    #"修改传入的列表"
+    mylist.append([1, 2, 3, 4])
+    print("函数内取值: ", mylist)
+    return
+
+# 调用changeme函数
+mylist = [10, 20, 30]
+changeme(mylist)
+print("函数外取值: ", mylist)
