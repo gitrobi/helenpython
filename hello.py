@@ -564,3 +564,29 @@ def changeme(mylist):
 mylist = [10, 20, 30]
 changeme(mylist)
 print("函数外取值: ", mylist)
+
+
+def printme(str):
+    #"打印任何传入的字符串"
+    print(str)
+    return
+
+
+# 调用 printme 函数，不加参数会报错
+printme(str="菜鸟教程")
+
+print("\n")
+
+def printinfo(name, age=35):
+    "打印任何传入的字符串"
+    print("名字: ", name)
+    print("年龄: ", age)
+    return
+
+
+# 调用printinfo函数
+printinfo(age=50, name="runoob")
+print ("------------------------")
+printinfo( name="runoob" )
+
+
